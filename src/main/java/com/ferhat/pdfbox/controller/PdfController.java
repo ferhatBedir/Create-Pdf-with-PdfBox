@@ -29,7 +29,6 @@ public class PdfController {
         ByteArrayInputStream bais = pdfService.create();
 
         HttpHeaders headers = new HttpHeaders();
-
         headers.add("Content-Disposition", "inline; pdfBox.pdf");
 
         return ResponseEntity
